@@ -1,0 +1,28 @@
+{
+  "name": "michaeltodd",
+  "version": "1.0.0",
+  "description": "Project for michaeltodd.co.za",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeltoddprogramming/michaeltodd.co.za.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Michael Todd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaeltoddprogramming/michaeltodd.co.za/issues"
+  },
+  "homepage": "https://github.com/michaeltoddprogramming/michaeltodd.co.za#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7"
+  }
+}
