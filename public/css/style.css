@@ -24,7 +24,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #A41F13;
+    color: #8F7A6E;
     outline: none;
     text-decoration: none;
 }
@@ -54,10 +54,10 @@ a:focus {
 }
 
 .btn:hover {
-    color: #A41F13;
+    color: #8F7A6E;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #A41F13;
-    border-color: #A41F13;
+    box-shadow: inset 0 0 0 0 #8F7A6E;
+    border-color: #8F7A6E;
 }
 
 #loader {
@@ -315,7 +315,7 @@ a:focus {
 
 .hero .hero-btn .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: #8F7A6E;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -440,7 +440,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #EF233C;
+    background: #8F7A6E;
     z-index: -1;
 }
 
@@ -451,7 +451,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #EF233C;
+    background: #8F7A6E;
     z-index: 1;
 }
 
@@ -487,19 +487,16 @@ a:focus {
 }
 
 .about .about-img {
-    position: relative;
     height: 100%;
 }
 
 .about .about-img img {
-    position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .about .about-content {
-    padding: 0 60px;
+    padding: 0 170px;
 }
 
 .about .about-text p {
@@ -533,7 +530,7 @@ a:focus {
 
 .about .progress .progress-bar {
     width: 0px;
-    background: #EF233C;
+    background: #8F7A6E;
     border-radius: 10px;
     transition: 2s;
 }
@@ -566,7 +563,7 @@ a:focus {
     content: '';
     position: absolute;
     width: 2px;
-    background: #EF233C;
+    background: #8F7A6E;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -598,7 +595,7 @@ a:focus {
     top: 48px;
     right: -8px;
     background: #ffffff;
-    border: 2px solid #EF233C;
+    border: 2px solid #8F7A6E;
     border-radius: 16px;
     z-index: 1;
 }
@@ -630,7 +627,7 @@ a:focus {
     top: 44px;
     font-size: 16px;
     font-weight: 600;
-    color: #EF233C;
+    color: #8F7A6E;
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
@@ -744,7 +741,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 #8F7A6E;
 }
 
 .service .service-icon {
@@ -754,14 +751,14 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #EF233C;
+    border: 1px solid #8F7A6E;
     background: #ffffff;
 }
 
 .service .service-icon i {
     position: relative;
     font-size: 60px;
-    color: #EF233C;
+    color: #8F7A6E;
     transition: .3s;
 }
 
@@ -829,10 +826,10 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
-    background: #EF233C;
+    background: #8F7A6E;
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    box-shadow: inset 0 0 0 50px #8F7A6E;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
@@ -840,10 +837,10 @@ a:focus {
 
 .portfolio #portfolio-filter li:hover,
 .portfolio #portfolio-filter li.filter-active {
-    color: #EF233C;
+    color: #8F7A6E;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #8F7A6E;
+    border-color: #8F7A6E;
 }
 
 .portfolio .portfolio-item {
@@ -905,10 +902,10 @@ a:focus {
 }
 
 .portfolio .portfolio-item:hover a.btn {
-    color: #EF233C;
+    color: #8F7A6E;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #8F7A6E;
+    border-color: #8F7A6E;
 }
 
 
