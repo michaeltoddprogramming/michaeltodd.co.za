@@ -1303,19 +1303,18 @@ a:focus {
 .contact {
     position: relative;
     width: 100%;
-    margin: 45px 0;
-    background: #EF233C;
+    background: #8F7A6E;
 }
 
 .contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
+    background: url(../img/MESTUPIDAGAIN.jpeg) no-repeat;
     background-size: contain;
 }
 
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
-    background: #EF233C;
+    background: #8F7A6E;
 }
 
 .contact .contact-form input {
@@ -1349,7 +1348,7 @@ a:focus {
 
 .contact .contact-form .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: #292F36;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -1376,7 +1375,7 @@ a:focus {
     }
     
     .contact .contact-form {
-        padding: 90px 0;
+        padding: 0;
     }
 }
 
@@ -1462,7 +1461,6 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
     background: #292F36;
 }
 
@@ -1586,4 +1584,126 @@ a:focus {
         line-height: 16px;
         padding: 0 5px;
     }
+}
+
+/* Michael Styling */
+
+.video-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.video-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.video-item:hover video {
+    filter: brightness(0.7);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox video {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.lightbox .close:hover,
+.lightbox .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.embedded-website {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.embedded-website .site-image {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio h2 {
+    margin-top: 100px;
+}
+
+.embedded-website .site-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.embedded-website .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(45deg, #8F7A6E, #414141);
+    border: 1px solid #666666;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.embedded-website .btn:hover {
+    background: linear-gradient(45deg, #ffffff, #666666);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

@@ -1,0 +1,125 @@
+/* Michael Todd u23540223 */
+
+@font-face {
+    font-family: "gameFont";
+    src: url("Minecraft.ttf");
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;  
+}
+.futuristic-button {
+    background-color: #1d1d1d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.futuristic-button:hover {
+    background-color: #000000;
+}
+
+.index-portal {
+    width: 300px;
+    height: 500px;
+    background-color: green;
+    position: absolute;
+    top: calc(500vh - 500px);
+    left: calc(500vh - 300px);
+    transform: translate(-50%, -50%);
+    animation: glowing 2s infinite;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer; 
+}
+
+.index-portal:hover {
+    width: 400px;
+    height: 600px;
+    box-shadow: 0 0 500px green;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    background: radial-gradient(circle, #1d1d1d, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 500vh;
+    min-width: 500vh;
+    overflow: auto;
+    font-family: "gameFont";
+}
+
+.arrow {
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    animation: arrowAnimation 2s infinite alternate;
+    display: none;
+}
+
+.text {
+    top: 5%;
+    left: 20%;
+    text-align: center;
+    transform: translate(-50%, -100%);
+    font-size: 30px;
+}
+
+.up {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.down {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.left {
+    top: 50%;
+    left: 40%;
+    transform: translate(-100%, -50%);
+}
+
+.right {
+    top: 50%;
+    left: 60%;
+    transform: translate(0%, -100%);
+}
+
+
+.fade-out {
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes arrowAnimation {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(20%);
+    }
+}

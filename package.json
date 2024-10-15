@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/michaeltoddprogramming/michaeltodd.co.za#readme",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "nodemailer": "^6.9.15",
     "nodemon": "^3.1.4",
     "path": "^0.12.7"
   }

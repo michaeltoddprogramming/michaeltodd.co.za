@@ -1,0 +1,158 @@
+/* Michael Todd u23540223 */
+
+@font-face {
+    font-family: "gameFont";
+    src: url("Minecraft.ttf");
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;  
+}
+canvas {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+body {
+    background-image: url('../img/BG5.png');
+    background-size: 150%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+}
+
+.laptop-screen {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: #3a3a3a;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#gameCanvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#gameStatus {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#playerHealth, #playerScore, #enemyHealth, #gameOver {
+    font-family: "gameFont";
+    appearance: none;
+    -webkit-appearance: none;
+    width: 200px;
+    height: 20px;
+    overflow: hidden;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: green;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#gunTemperature {
+    margin-left: 290px;
+    font-family: "gameFont";
+}
+
+.health-counter, .score-counter {
+    position: absolute;
+    top: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.health-bar {
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-health {
+    height: 100%;
+    background-color: green;
+}
+
+#playerCurrentHealth {
+    height: 100%;
+    background-color: green;
+}
+
+#enemyCurrentHealth {
+    height: 100%;
+    background-color: red;
+}
+
+#playerHealthNumber {
+    color: green;
+}
+
+#enemyHealthNumber {
+    color: red;
+}
+#gameOver {
+    position: absolute;
+top: 300%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 300px;
+    border-radius: 2px;
+    display: none;
+    color: green;
+}
+
+#fade-in-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    z-index: 9999;
+    animation: fadeOut 3s forwards;
+}
+
+#playerImage {
+    animation: move 2s infinite;
+}
+
+@keyframes move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(100px, 0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
